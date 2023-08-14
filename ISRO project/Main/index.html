@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="isro.css">
+    <title>Isro Centers</title>
+    <link rel="icon" href="ISRO icon.jpg" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+        integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 id="head"><img src="ISRO icon.jpg">ISRO Centers</h1>
+        <h3><span id="h3">I</span>NDIAN <span id="h3">S</span>PACE <span id="h3">R</span>ESEARCH <span
+                id="h3">O</span>RGANIZATION</h3>
+        <div id="title">ISRO centers location based on place, state and name</div>
+        <div class="searchbox">
+            <span id="searchOpt">
+                <input class="search" type="text" id="search" placeholder="Search...">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+            </span>
+            <button id="State" onclick="searchBar(this)">State</button>
+            <button id="Place" onclick="searchBar(this)">City</button>
+            <button id="name" onclick="searchBar(this)">Centers</button>
+        </div>
+        <div id="tabled"></div>
+    </div>
+    <script src="isro.js"></script>
+</body>
+
+</html>
